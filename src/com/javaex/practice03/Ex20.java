@@ -22,6 +22,8 @@ public class Ex20 {
 		
 		boolean run=true;
 		boolean run2=true;
+		boolean run3=true;
+		
 		
 		while(run) {
 			System.out.println("=================");
@@ -29,6 +31,7 @@ public class Ex20 {
 			System.out.println("=================");
 			
 			int a=(int)(Math.random()*100)+1;
+			run2=true;
 			while(run2) {
 				System.out.print(">>");
 				int b=sc.nextInt();
@@ -37,11 +40,29 @@ public class Ex20 {
 				}else if(b>a) {
 					System.out.println("더 낮게");
 				}else {
+					System.out.println("맞았습니다");
+					run3=true;
+					while(run3) {
+					System.out.println("게임을 종료하시겠습니까?(y/n)");
+					String y=sc.next();
+					if (y.equals("y")) {
+						run3=false;
+						run2=false;
+						System.out.println("종료");
+						run=false;
+					}else if(y.equals("n")) {
+						run3=false;
+						run2=false;
+					}else{
+						System.out.println("다시 입력해주세요");
+					};
 					
-						
+					}	
+					
 				}	
 			}
-		}
+			//탈출문
+		}sc.close();
 		
 	}
 }
