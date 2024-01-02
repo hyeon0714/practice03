@@ -18,24 +18,18 @@ public class Ex14 {
 		
 		int b=0;
 		
-		int d=0;
+
 		
-
-		for(int c=1; c<=a; c++) {//세로
-			
-			d=d+c;
-			for(b=1; b<=a-1; b++) {
-				
-				System.out.print(b+"+");
-
-			
-
-			
-		}				System.out.print(a);
-		System.out.println("");
-	
-		}System.out.println("합계: "+d);
-		sc.close();
+		for(int c=1; c<=a; c++) {
+			b=b+c;
+			if(c==a) {
+				System.out.println(a);
+			}else {
+				System.out.print(c+"+");
+			}
+		}System.out.println(b);
+		
+	sc.close();	
 	}
 	
 }
