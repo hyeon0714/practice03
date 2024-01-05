@@ -1,6 +1,6 @@
 package com.javaex.practice03;
 
-import java.util.Scanner;
+
 
 public class ttt {
 
